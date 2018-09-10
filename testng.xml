@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UMA suite">
+
+<listeners>
+	<listener class-name="reports.ListenerClass"/>
+</listeners>
+
+<test thread-count="5" name="UMA test" verbose="2">
+	<classes>
+		<class name="testCases.UMA_ChanLine_CRM"/>
+		<class name="testCases.UMA_ChanLine_OMS"/>
+		<class name="testCases.UMA_ChanLine_TVAM"/>
+	</classes>
+</test> <!-- UMA test -->
+</suite> <!-- UMA suite -->

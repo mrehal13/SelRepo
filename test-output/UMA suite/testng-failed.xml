@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [UMA suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="reports.ListenerClass"/>
+  </listeners>
+  <test name="UMA test(failed)">
+    <classes>
+      <class name="testCases.UMA_ChanLine_CRM">
+        <methods>
+          <include name="st"/>
+          <include name="UMA_ChanLine_CRM_test"/>
+        </methods>
+      </class> <!-- testCases.UMA_ChanLine_CRM -->
+      <class name="testCases.UMA_ChanLine_OMS">
+        <methods>
+          <include name="UMA_ChanLine_OMS_test"/>
+        </methods>
+      </class> <!-- testCases.UMA_ChanLine_OMS -->
+      <class name="testCases.UMA_ChanLine_TVAM">
+        <methods>
+          <include name="UMA_ChanLine_CRM_test"/>
+        </methods>
+      </class> <!-- testCases.UMA_ChanLine_TVAM -->
+    </classes>
+  </test> <!-- UMA test(failed) -->
+</suite> <!-- Failed suite [UMA suite] -->
